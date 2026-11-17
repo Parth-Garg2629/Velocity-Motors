@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Velocity Motors</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <img src="./images/logo.webp" alt="Velocity Motors" width="200" height="200">
+                <h2>VELOCITY MOTORS</h2>
+
+                <a href="./index.html">HOME</a>
+                <a href="./cars.html">CARS</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./booking.html">BOOKING</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>BOOK YOUR TEST DRIVE</h2>
+            <p>Experience the thrill of driving your dream car.</p>
+
+            <figure>
+                <img src="./images/test_drive.webp" alt="A car ready for a test drive">
+            </figure>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>TEST DRIVE BOOKING FORM</h2>
+
+            <form action="./php/booking.php" method="POST">
+
+                <label for="name">Full Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <br><br>
+
+                <label for="email">Email ID:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="emailid"
+                    placeholder="abc@gmail.com"
+                    required
+                >
+
+                <br><br>
+
+                <label for="phone">Phone No.:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+XX XXXXX XXXXX"
+                    required
+                >
+
+                <br><br>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+
+                <br>
+
+                <label for="car">Select Car:</label>
+                <select id="car" name="car" required>
+                    <option value="">Select a car</option>
+                    <option value="Lamborghini">Lamborghini</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Porsche">Porsche</option>
+                    <option value="Range Rover Sport">Range Rover Sport</option>
+                </select>
+
+                <br><br>
+
+                <label for="date">Preferred Test Drive Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <br><br>
+
+                <label for="message">Additional Message:</label>
+                <br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="40"
+                    placeholder="Any additional requirements..."
+                ></textarea>
+
+                <br><br>
+
+                <button type="submit">BOOK TEST DRIVE</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Velocity Motors. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

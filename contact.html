@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Velocity Motors</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <img src="./images/logo.webp" alt="Velocity Motors" width="200" height="200">
+                <h2>VELOCITY MOTORS</h2>
+
+                <a href="./index.html">HOME</a>
+                <a href="./cars.html">CARS</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./booking.html">BOOKING</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h1>GET IN TOUCH</h1>
+            <p>We'd love to hear from you. Get in touch with our team for any queries or assistance.</p>
+        </section>
+
+        <hr>
+
+        <section>
+
+            <div>
+                <h2>CONTACT INFORMATION</h2>
+
+                <ul>
+                    <li>
+                        <strong>Location:</strong>
+                        Sheikh Zayed Road, Al Quoz 3, Dubai, UAE
+                    </li>
+
+                    <li>
+                        <strong>Phone:</strong>
+                        +971 4 323 2999
+                    </li>
+
+                    <li>
+                        <strong>Email:</strong>
+                        info@velocitymotors.com
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>SEND US A MESSAGE</h2>
+
+                <form action="./php/contact.php" method="POST">
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="fullname" placeholder="Enter your full name" required>
+
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                    <br><br>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+                    <br><br>
+
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea>
+
+                    <br><br>
+
+                    <button type="submit">SEND MESSAGE</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>FIND OUR SHOWROOM</h2>
+
+            <iframe
+                src="https://www.google.com/maps?q=VIP+Motors+Sheikh+Zayed+Road+Dubai&output=embed"
+                width="600"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                title="Velocity Motors Showroom Location">
+            </iframe>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Velocity Motors. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
