@@ -9,43 +9,44 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div>
-                <img src="./images/logo.webp" alt="Velocity Motors" width="200" height="200">
-                <h2>VELOCITY MOTORS</h2>
+    <header class="site-header" id="top">
+        <nav class="navbar">
+            <div class="nav-container">
+                <img class="logo" src="./images/logo.webp" alt="Velocity Motors" width="200" height="200">
+                <h2 class="brand-name">VELOCITY MOTORS</h2>
 
-                <a href="./index.html">HOME</a>
-                <a href="./cars.html">CARS</a>
-                <a href="./about.html">ABOUT</a>
-                <a href="./booking.html">BOOKING</a>
-                <a href="./contact.html">CONTACT</a>
+                <a class="nav-link" href="./index.html">HOME</a>
+                <a class="nav-link" href="./cars.html">CARS</a>
+                <a class="nav-link" href="./about.html">ABOUT</a>
+                <a class="nav-link active" href="./booking.html">BOOKING</a>
+                <a class="nav-link" href="./contact.html">CONTACT</a>
             </div>
         </nav>
     </header>
 
     <hr>
 
-    <main>
+    <main id="main-content">
 
-        <section>
-            <h2>BOOK YOUR TEST DRIVE</h2>
-            <p>Experience the thrill of driving your dream car.</p>
+        <section class="booking-hero" id="booking-intro">
+            <h2 class="section-title">BOOK YOUR TEST DRIVE</h2>
+            <p class="hero-description">Experience the thrill of driving your dream car.</p>
 
-            <figure>
-                <img src="./images/test_drive.webp" alt="A car ready for a test drive">
+            <figure class="booking-figure">
+                <img class="booking-image" src="./images/test_drive.webp" alt="A car ready for a test drive">
             </figure>
         </section>
 
         <hr>
 
-        <section>
-            <h2>TEST DRIVE BOOKING FORM</h2>
+        <section class="booking-form-section" id="test-drive-form">
+            <h2 class="section-title">TEST DRIVE BOOKING FORM</h2>
 
-            <form action="./php/booking.php" method="POST">
+            <form class="booking-form" action="./php/booking.php" method="POST">
 
-                <label for="name">Full Name:</label>
+                <label class="form-label" for="name">Full Name:</label>
                 <input
+                    class="form-input"
                     type="text"
                     id="name"
                     name="fullname"
@@ -55,8 +56,9 @@
 
                 <br><br>
 
-                <label for="email">Email ID:</label>
+                <label class="form-label" for="email">Email ID:</label>
                 <input
+                    class="form-input"
                     type="email"
                     id="email"
                     name="emailid"
@@ -66,8 +68,9 @@
 
                 <br><br>
 
-                <label for="phone">Phone No.:</label>
+                <label class="form-label" for="phone">Phone No.:</label>
                 <input
+                    class="form-input"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -77,7 +80,7 @@
 
                 <br><br>
 
-                <fieldset>
+                <fieldset class="gender-fieldset">
                     <legend>Gender:</legend>
 
                     <input type="radio" id="male" name="gender" value="male" required>
@@ -89,8 +92,8 @@
 
                 <br>
 
-                <label for="car">Select Car:</label>
-                <select id="car" name="car" required>
+                <label class="form-label" for="car">Select Car:</label>
+                <select class="form-select" id="car" name="car" required>
                     <option value="">Select a car</option>
                     <option value="Lamborghini">Lamborghini</option>
                     <option value="Ferrari">Ferrari</option>
@@ -100,14 +103,15 @@
 
                 <br><br>
 
-                <label for="date">Preferred Test Drive Date:</label>
-                <input type="date" id="date" name="date" required>
+                <label class="form-label" for="date">Preferred Test Drive Date:</label>
+                <input class="form-input" type="date" id="date" name="date" required>
 
                 <br><br>
 
-                <label for="message">Additional Message:</label>
+                <label class="form-label" for="message">Additional Message:</label>
                 <br>
                 <textarea
+                    class="form-textarea"
                     id="message"
                     name="message"
                     rows="4"
@@ -117,7 +121,7 @@
 
                 <br><br>
 
-                <button type="submit">BOOK TEST DRIVE</button>
+                <button class="submit-button" type="submit">BOOK TEST DRIVE</button>
 
             </form>
         </section>
@@ -126,7 +130,7 @@
 
     <hr>
 
-    <footer>
+    <footer class="site-footer" id="footer">
         <p>&copy; 2026 Velocity Motors. All rights reserved.</p>
     </footer>
 

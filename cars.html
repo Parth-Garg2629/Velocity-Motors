@@ -9,143 +9,147 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div>
-                <img src="./images/logo.webp" alt="Velocity Motors" width="200" height="200">
-                <h2>VELOCITY MOTORS</h2>
+    <header class="site-header" id="top">
+        <nav class="navbar">
+            <div class="nav-container">
+                <img class="logo" src="./images/logo.webp" alt="Velocity Motors" width="200" height="200">
+                <h2 class="brand-name">VELOCITY MOTORS</h2>
 
-                <a href="./index.html">HOME</a>
-                <a href="./cars.html">CARS</a>
-                <a href="./about.html">ABOUT</a>
-                <a href="./booking.html">BOOKING</a>
-                <a href="./contact.html">CONTACT</a>
+                <a class="nav-link" href="./index.html">HOME</a>
+                <a class="nav-link active" href="./cars.html">CARS</a>
+                <a class="nav-link" href="./about.html">ABOUT</a>
+                <a class="nav-link" href="./booking.html">BOOKING</a>
+                <a class="nav-link" href="./contact.html">CONTACT</a>
             </div>
         </nav>
     </header>
 
     <hr>
 
-    <main>
+    <main id="main-content">
 
-        <section>
-            <h2>Explore Our Collection</h2>
-            <p>
+        <section class="page-intro" id="collection-intro">
+            <h2 class="section-title">Explore Our Collection</h2>
+            <p class="section-description">
                 Explore our exclusive collection of premium automobiles, featuring exceptional performance, elegant designs, and world-class engineering. Find the perfect car that matches your lifestyle and driving preferences.
             </p>
         </section>
 
         <hr>
 
-        <section>
-            <h2>Car Categories</h2>
-            <ul>
+        <section class="car-categories" id="car-categories">
+            <h2 class="section-title">Car Categories</h2>
+            <ul class="category-list">
                 <li>Sports Cars</li>
                 <li>Luxury Cars</li>
                 <li>SUVs</li>
             </ul>
         </section>
 
-        <section>
-            <h2>AVAILABLE CARS</h2>
+        <section class="available-cars" id="available-cars">
+            <h2 class="section-title">AVAILABLE CARS</h2>
 
-            <article>
-                <img src="./images/lamborghini.webp" alt="Lamborghini">
-                <h3>Lamborghini Huracan</h3>
-                <p>$385,000</p>
-                <p>High performance sports car</p>
-            </article>
+            <div class="inventory-list">
+                <article class="inventory-card" id="lamborghini-huracan">
+                    <img class="car-image" src="./images/lamborghini.webp" alt="Lamborghini">
+                    <h3 class="car-name">Lamborghini Huracan</h3>
+                    <p class="car-price">$385,000</p>
+                    <p class="car-description">High performance sports car</p>
+                </article>
 
-            <article>
-                <img src="./images/ferrari.webp" alt="Ferrari">
-                <h3>Ferrari 296 GTB</h3>
-                <p>$350,000</p>
-                <p>Hybrid-powered high-performance sports car</p>
-            </article>
+                <article class="inventory-card" id="ferrari-296">
+                    <img class="car-image" src="./images/ferrari.webp" alt="Ferrari">
+                    <h3 class="car-name">Ferrari 296 GTB</h3>
+                    <p class="car-price">$350,000</p>
+                    <p class="car-description">Hybrid-powered high-performance sports car</p>
+                </article>
 
-            <article>
-                <img src="./images/porsche.webp" alt="Porsche">
-                <h3>Porsche 911</h3>
-                <p>$360,000</p>
-                <p>Iconic sports car with precision engineering</p>
-            </article>
+                <article class="inventory-card" id="porsche-911">
+                    <img class="car-image" src="./images/porsche.webp" alt="Porsche">
+                    <h3 class="car-name">Porsche 911</h3>
+                    <p class="car-price">$360,000</p>
+                    <p class="car-description">Iconic sports car with precision engineering</p>
+                </article>
 
-            <article>
-                <img src="./images/range_rover.webp" alt="Range Rover">
-                <h3>Range Rover Sport</h3>
-                <p>$120,000</p>
-                <p>Premium SUV combining luxury and performance</p>
-            </article>
+                <article class="inventory-card" id="range-rover-sport">
+                    <img class="car-image" src="./images/range_rover.webp" alt="Range Rover">
+                    <h3 class="car-name">Range Rover Sport</h3>
+                    <p class="car-price">$120,000</p>
+                    <p class="car-description">Premium SUV combining luxury and performance</p>
+                </article>
+            </div>
         </section>
 
         <hr>
 
-        <section>
-        <h2>CAR SPECIFICATIONS</h2>
+        <section class="specifications-section" id="car-specifications">
+            <h2 class="section-title">CAR SPECIFICATIONS</h2>
 
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Model</th>
-                    <th>Engine</th>
-                    <th>Top Speed</th>
-                    <th>Transmission</th>
-                    <th>Fuel Type</th>
-                </tr>
-            </thead>
+            <div class="table-container">
+                <table class="specifications-table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Engine</th>
+                            <th>Top Speed</th>
+                            <th>Transmission</th>
+                            <th>Fuel Type</th>
+                        </tr>
+                    </thead>
 
-            <tbody>
-                <tr>
-                    <td>Lamborghini Huracan</td>
-                    <td>V10</td>
-                    <td>325 km/h</td>
-                    <td>Automatic</td>
-                    <td>Petrol</td>
-                </tr>
+                    <tbody>
+                        <tr>
+                            <td>Lamborghini Huracan</td>
+                            <td>V10</td>
+                            <td>325 km/h</td>
+                            <td>Automatic</td>
+                            <td>Petrol</td>
+                        </tr>
 
-                <tr>
-                    <td>Ferrari 296 GTB</td>
-                    <td>V6 Hybrid</td>
-                    <td>330 km/h</td>
-                    <td>Automatic</td>
-                    <td>Hybrid</td>
-                </tr>
+                        <tr>
+                            <td>Ferrari 296 GTB</td>
+                            <td>V6 Hybrid</td>
+                            <td>330 km/h</td>
+                            <td>Automatic</td>
+                            <td>Hybrid</td>
+                        </tr>
 
-                <tr>
-                    <td>Porsche 911</td>
-                    <td>Flat-6</td>
-                    <td>293 km/h</td>
-                    <td>Automatic</td>
-                    <td>Petrol</td>
-                </tr>
+                        <tr>
+                            <td>Porsche 911</td>
+                            <td>Flat-6</td>
+                            <td>293 km/h</td>
+                            <td>Automatic</td>
+                            <td>Petrol</td>
+                        </tr>
 
-                <tr>
-                    <td>Range Rover Sport</td>
-                    <td>Inline-6</td>
-                    <td>242 km/h</td>
-                    <td>Automatic</td>
-                    <td>Petrol</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+                        <tr>
+                            <td>Range Rover Sport</td>
+                            <td>Inline-6</td>
+                            <td>242 km/h</td>
+                            <td>Automatic</td>
+                            <td>Petrol</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <hr>
+        <hr>
 
-    <section>
-        <h2>
-            Interested in a Car?
-        </h2>
-        <p>
-            <a href="./booking.html">Book a test drive with us!</a>
-        </p>
-    </section>
+        <section class="booking-cta" id="booking-cta">
+            <h2 class="section-title">
+                Interested in a Car?
+            </h2>
+            <p>
+                <a class="cta-link" href="./booking.html">Book a test drive with us!</a>
+            </p>
+        </section>
 
     </main>
 
     <hr>
 
-    <footer>
+    <footer class="site-footer" id="footer">
         &copy; Velocity Motors
     </footer>
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,57 +8,59 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="./images/logo.webp" alt="Velocity Motors" width="200px" height="200px">
-                <h2>VELOCITY MOTORS</h2>
-                    <a href="./index.html">HOME</a>
-                    <a href="./cars.html">CARS</a>
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./booking.html">BOOKING</a>
-                    <a href="./contact.html">CONTACT</a>
+    <header class="site-header" id="top">
+        <nav class="navbar">
+            <div class="nav-container">
+                <img class="logo" src="./images/logo.webp" alt="Velocity Motors" width="200px" height="200px">
+                <h2 class="brand-name">VELOCITY MOTORS</h2>
+                <a class="nav-link" href="./index.html">HOME</a>
+                <a class="nav-link" href="./cars.html">CARS</a>
+                <a class="nav-link" href="./about.html">ABOUT</a>
+                <a class="nav-link" href="./booking.html">BOOKING</a>
+                <a class="nav-link" href="./contact.html">CONTACT</a>
             </div>
         </nav>
     </header>
 
     <hr>
     
-    <main>
+    <main id="main-content">
 
-        <section>
-            <h1>FIND YOUR PERFECT DRIVE</h1>
-            <p>Discover premium cars that match your style.</p>
-            <img src="./images/showroom_img.webp" alt="Premium luxury car showroom interior featuring sports cars">
+        <section class="hero" id="home-hero">
+            <h1 class="hero-title">FIND YOUR PERFECT DRIVE</h1>
+            <p class="hero-description">Discover premium cars that match your style.</p>
+            <img class="hero-image" src="./images/showroom_img.webp" alt="Premium luxury car showroom interior featuring sports cars">
         </section>
 
         <hr>
 
-        <section>
+        <section class="featured-cars" id="featured-cars">
             
-            <h2>FEATURED CARS</h2>
+            <h2 class="section-title">FEATURED CARS</h2>
 
-            <div>
-                <figure>
-                    <img src="./images/lamborghini.webp" alt="Lamborghini"> 
-                    <figcaption><p>Lamborghini</p>
-                        <p>$385,000</p></figcaption>
+            <div class="car-list">
+                <figure class="car-card" id="lamborghini">
+                    <img class="car-image" src="./images/lamborghini.webp" alt="Lamborghini"> 
+                    <figcaption class="car-caption">
+                        <p class="car-name">Lamborghini</p>
+                        <p class="car-price">$385,000</p>
+                    </figcaption>
                 </figure>
-            </div>
 
-            <div>
-                <figure>
-                    <img src="./images/ferrari.webp" alt="Ferrari"> 
-                    <figcaption><p>Ferrari</p>
-                    <p>$350,000</p></figcaption>
+                <figure class="car-card" id="ferrari">
+                    <img class="car-image" src="./images/ferrari.webp" alt="Ferrari"> 
+                    <figcaption class="car-caption">
+                        <p class="car-name">Ferrari</p>
+                        <p class="car-price">$350,000</p>
+                    </figcaption>
                 </figure>
-            </div>
 
-            <div>
-                <figure>
-                    <img src="./images/porsche.webp" alt="Porsche"> 
-                    <figcaption> <p>Porsche</p>
-                        <p>$360,000</p></figcaption>
+                <figure class="car-card" id="porsche">
+                    <img class="car-image" src="./images/porsche.webp" alt="Porsche"> 
+                    <figcaption class="car-caption">
+                        <p class="car-name">Porsche</p>
+                        <p class="car-price">$360,000</p>
+                    </figcaption>
                 </figure>
             </div>
 
@@ -65,10 +68,10 @@
 
         <hr>
 
-        <section>
-            <h2>Why Choose Us?</h2>
+        <section class="why-choose-us" id="why-choose-us">
+            <h2 class="section-title">Why Choose Us?</h2>
             
-            <ul>
+            <ul class="benefit-list">
                 <li>Quality</li>
                 <li>Trust</li>
                 <li>Premium Experience</li>
@@ -80,10 +83,8 @@
     
     <hr>
 
-    <footer>
-
+    <footer class="site-footer" id="footer">
         &copy; Velocity Motors
-
     </footer>
 
 </body>
